@@ -1,0 +1,133 @@
+/*Sidebar*/
+.sidebar-section {
+    position: fixed;
+    width: 250px;
+    min-height: 100vh;
+    background: white;
+    padding-top: 10px;
+    padding-left: 30px;
+    top: 70px;
+    left: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.mobile {
+    display: none;
+}
+
+.mobile-top {
+    display: none;
+}
+
+
+.menu-section {
+
+    margin-top: 10px;
+    margin-left: 5px;
+
+}
+
+.menu-section a {
+    width: 100%;
+    font-size: 1rem;
+    color: black;
+    display: flex;
+    align-items: center;
+    line-height: 50px;
+    text-decoration: none;
+    padding-left: 10px;
+}
+.card a {
+    width: 100%;
+    font-size: 1rem;
+    color: black;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding-left: 10px;
+    font-size: 1.1rem;
+    
+}
+
+.menu-section a:hover {
+    color: black;
+    transition: 0.1s;
+    background-color: #e6e2e2;
+    border-radius: 10px;
+    
+}
+.active{
+    background-color: #e6e2e2;
+    border-radius: 10px;
+}
+
+.menu-section .icon {
+    margin-right: 1rem;
+    font-size: 20px;
+    
+}
+
+
+.suggestion{
+    position:absolute;
+    width: calc(100% - 250px);
+    left: 250px;
+    top: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    overflow-x: auto;
+}
+.outer{
+    position:absolute;
+    width: calc(100% - 250px);
+    left: 250px;
+    background-color:white;
+    top: 140px;
+    min-height: 100vh; 
+    overflow:visible;
+    padding-left: 30px;
+}
+@media screen and (max-width:1300px) {
+    .sidebar-section {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 70px;
+        height: 100vh;
+
+    }
+    .suggestion{
+        position:absolute;
+        width: calc(100% - 80px);
+        left: 80px;
+        
+    }
+    .youtube-logo{
+        display: none;
+    }
+    .logo .logo-png {
+        display: none;
+    }
+
+    .logo .logo-img {
+        margin-right: 1rem;
+        font-size: 30px;
+    }
+
+    .menu-section .option {
+        display: none;
+    }
+    .outer{
+        position:absolute;
+        width: calc(100% - 80px);
+        left: 80px;
+    }
+
+}
